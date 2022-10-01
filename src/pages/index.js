@@ -10,10 +10,6 @@ import { login, logout, isAuthenticated, getProfile,setItem } from "../utils/aut
 
 export default function ({data}) {
   
-  // if (!isAuthenticated()) {
-  //   login()
-  //   return <p>Redirecting to login...</p>
-  // }
   
   const user = getProfile()
 
