@@ -4,6 +4,9 @@ require("dotenv").config({
 })
 const path = require(`path`)
 module.exports = {
+  flags: {
+    DEV_SSR: true
+  },
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -13,7 +16,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-    'gatsby-remark-reading-time',
+   
     {
       resolve: 'gatsby-plugin-next-seo',
       options: {
@@ -106,13 +109,6 @@ module.exports = {
     //   },
     // },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `8556131572`,
-      },
-    },
-    
-    {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: `src/utils/typography.js`
@@ -168,58 +164,56 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: 'studikasuscontentful',
+          bucketName: 'studikasuscontentful2',A
       },
   },
-    // {
-    //   resolve: `gatsby-plugin-chatwoot`,
-    //   options: {
-    //       baseUrl: 'BASE_URL', // Required
-    //       websiteToken: 'XgBAbNxwrjDTBzDY2EtTQJzj', // Required
-    //       includeInDevelopment: false, // Optional
-    //       chatwootSettings: {} // Optional
-    //   },
-    // },
     {
-      resolve: 'gatsby-plugin-local-search',
+      resolve: `gatsby-plugin-chatwoot`,
       options: {
-        name: 'pages',
-        engine: 'flexsearch',
-        engineOptions: 'speed',
-        query: `
-          {
-            allContentfulProduk {
-              nodes {
-                id
-                namaProduk
-                deskripsi {
-                  raw
-                }
-                hargaProduk
-                images {
-                  url
-                }
-              }
-            }
-          }
-        `,
-
-        ref: 'id',
-        index: ['namaProduk'],
-
-        store: ['id','namaProduk','raw','url','hargaProduk'],
-
-        normalizer: ({ data }) =>
-          data.allContentfulProduk.nodes.map((node) => ({
-            id: node.id,
-            description: node.description.raw,
-            name: node.namaProduk,
-            images: node.images.url,
-            default_price: node.hargaProduk,
-
-          })),
+          baseUrl: 'http://studikasuscontentful2.s3-website-ap-southeast-1.amazonaws.com/', // Required
+          websiteToken: 'XgBAbNxwrjDTBzDY2EtTQJzj', // Required
       },
     },
+    // {
+    //   resolve: 'gatsby-plugin-local-search',
+    //   options: {
+    //     name: 'pages',
+    //     engine: 'flexsearch',
+    //     engineOptions: 'speed',
+    //     query: `
+    //       {
+    //         allContentfulProduk {
+    //           nodes {
+    //             id
+    //             namaProduk
+    //             deskripsi {
+    //               raw
+    //             }
+    //             hargaProduk
+    //             images {
+    //               url
+    //             }
+    //           }
+    //         }
+    //       }
+    //     `,
+
+    //     ref: 'id',
+    //     index: ['namaProduk'],
+
+    //     store: ['id','namaProduk','raw','url','hargaProduk'],
+
+    //     normalizer: ({ data }) =>
+    //       data.allContentfulProduk.nodes.map((node) => ({
+    //         id: node.id,
+    //         description: node.description.raw,
+    //         name: node.namaProduk,
+    //         images: node.images.url,
+    //         default_price: node.hargaProduk,
+
+    //       })),
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

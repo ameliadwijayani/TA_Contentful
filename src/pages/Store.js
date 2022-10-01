@@ -93,7 +93,7 @@ export default function Store({ data: {
                                     </div>
                                     <div className="product-body">
                                         
-                                        <h3 className="product-name"><Link to={`/${e.node.id}`}>{e.node.namaProduk}</Link></h3>
+                                        <h3 className="product-name">{e.node.namaProduk}</h3>
 
                                         <h4 className="product-price">Rp {e.node.hargaProduk}</h4>
                                         <div className="product-rating">
@@ -152,10 +152,6 @@ export default function Store({ data: {
 
 export const query = graphql`
     query {
-        localSearchPages {
-            store
-            index
-        }
         allContentfulProduk {
             edges {
               node {

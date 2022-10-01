@@ -1,9 +1,11 @@
+
 import React from 'react'
 import Header from "./Header"
 import Navbar from "./Navbar"
 import Test from "./Test"
 import Footer from "./Footer"
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap/dist/js/bootstrap.min.js'
 import '../pages/css/bootstrap.min.css'
 import '../pages/css/nouislider.min.css'
@@ -20,6 +22,9 @@ export default function Layout({
 
     navigate('/Store?s='+searchQuery);
   }
+  React.useEffect(()=>{
+    
+  },[])
   return (
       <>
 

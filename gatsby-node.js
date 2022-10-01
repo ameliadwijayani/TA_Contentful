@@ -1,12 +1,3 @@
-exports.createPages = async ({ actions }) => {
-  const { createPage } = actions
-  createPage({
-    path: "/using-dsg",
-    component: require.resolve("./src/templates/using-dsg.js"),
-    context: {},
-    defer: true,
-  })
-}
 
 /**
  * Implement Gatsby's Node APIs in this file.
@@ -29,28 +20,17 @@ exports.onCreateNode = ({ node, getNode, actions}) => {
         })
     }
 }
-exports.createPages = async({ graphql, actions }) => {
-    const { createPage } = actions
-    const result = await graphql(`
-        query {
-          allStripePrice {
-            edges {
-              node {
-                product {
-                  id
-                }
-              }
-            }
-          }
-        }
-    `)
-    result.data.allStripePrice.edges.forEach(({ node }) => {
-        createPage({
-            path: node.product.id,
-            component: path.resolve(`./src/templates/index.js`),
-            context: {
-                id: node.product.id,
-            }
-        })
-    })
-}
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html" || stage === "develop-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /bootstrap/,
+            use: loaders.null(),
+          },
+        ],
+      },
+    });
+   }
+ };

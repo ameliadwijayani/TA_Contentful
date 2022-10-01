@@ -1,4 +1,5 @@
 import React from 'react'
+import "bootstrap/dist/css/bootstrap.min.css"
 import Layout from "../components/Layout"
 import { StaticImage} from "gatsby-plugin-image"
 import { GatsbyImage } from "gatsby-plugin-image"
@@ -13,6 +14,7 @@ export default function ({data}) {
   //   login()
   //   return <p>Redirecting to login...</p>
   // }
+  
   const user = getProfile()
 
   const [Loading,setLoading]=React.useState(false)
@@ -27,9 +29,6 @@ export default function ({data}) {
   },[])
   const [allMarkdownRemak, setallMarkdownRemak]  = React.useState([]); 
     
-  const { search } = window.location;
-  const query = new URLSearchParams(search).get('s')
-  const [searchQuery, setSearchQuery] = React.useState(query || '');
 
   React.useEffect(()=>{
     // if(query){
@@ -44,16 +43,6 @@ export default function ({data}) {
     //     setallMarkdownRemak(data.allContentfulProduk.nodes)
     // }
   },[])
-
-  React.useEffect(()=>{
-    // let temp=[];
-    // data.allContentfulProduk.nodes.map((e)=>{
-    //     if(e.title.includes(searchQuery)){
-    //         temp.push(e)
-    //     }
-    // })
-    // setallMarkdownRemak(temp)
-  },{searchQuery})
 
   function A(){
     return(
