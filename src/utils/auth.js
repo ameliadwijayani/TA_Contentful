@@ -5,9 +5,9 @@ const isBrowser = typeof window !== "undefined"
 
 const auth = isBrowser
   ? new auth0.WebAuth({
-      domain: process.env.AUTH0_DOMAIN,
-      clientID: process.env.AUTH0_CLIENTID,
-      redirectUri: process.env.AUTH0_CALLBACK,
+      domain: 'https://ta-ecom-contentful.netlify.app/',
+      clientID: 'qwCCBtO6uUDz9l4MAysczszRJUPqgx0W',
+      redirectUri: 'amelelectric.us.auth0.com',
       responseType: "token id_token",
       scope: "openid profile email",
     })
