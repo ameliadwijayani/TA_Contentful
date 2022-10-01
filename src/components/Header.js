@@ -5,10 +5,7 @@ import { GatsbySeo } from 'gatsby-plugin-next-seo';
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { StaticImage } from "gatsby-plugin-image"
 export default function  Header({ searchQuery, setSearchQuery,searchData }) {
-    if (!isAuthenticated()) {
-        login()
-        return <p>Redirecting to login...</p>
-    }
+   
     
     const data = useStaticQuery(graphql`
         query HeaderQuery {
@@ -27,7 +24,10 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
     },[])
     const user = getProfile()
     // if(Object.keys(user).length === 0){logout()}
-    
+    if (!isAuthenticated()) {
+        login()
+        return <p>Redirecting to login...</p>
+    }
   return (
     
     <div>
