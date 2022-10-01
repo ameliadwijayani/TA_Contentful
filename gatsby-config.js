@@ -167,13 +167,6 @@ module.exports = {
           bucketName: 'studikasuscontentful2',
       },
   },
-    {
-      resolve: `gatsby-plugin-chatwoot`,
-      options: {
-          baseUrl: 'http://studikasuscontentful2.s3-website-ap-southeast-1.amazonaws.com/', // Required
-          websiteToken: 'XgBAbNxwrjDTBzDY2EtTQJzj', // Required
-      },
-    },
     // {
     //   resolve: 'gatsby-plugin-local-search',
     //   options: {
