@@ -164,7 +164,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: 'studikasuscontentful2',A
+          bucketName: 'studikasuscontentful2',
       },
   },
     {
