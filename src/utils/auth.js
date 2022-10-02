@@ -5,7 +5,7 @@ const isBrowser = typeof window !== "undefined"
 
 const auth = isBrowser
   ? new auth0.WebAuth({
-      domain: 'https://ta-ecom-contentful.netlify.app/callback/',
+      domain: 'build-5b321b6b-256a-4586-8410-5b5eddf45a85.gtsb.io/callback/',
       clientID: 'qwCCBtO6uUDz9l4MAysczszRJUPqgx0W',
       redirectUri: 'amelelectric.us.auth0.com',
       responseType: "token id_token",
