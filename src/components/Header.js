@@ -24,10 +24,10 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
     },[])
     const user = getProfile()
     // if(Object.keys(user).length === 0){logout()}
-    if (!isAuthenticated()) {
-        login()
-        return <p>Redirecting to login...</p>
-    }
+    // if (!isAuthenticated()) {
+    //     login()
+    //     return <p>Redirecting to login...</p>
+    // }
   return (
     
     <div>
