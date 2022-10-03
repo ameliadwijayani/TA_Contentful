@@ -64,7 +64,7 @@ function SEO({ description, meta, title }) {
         },
       ].concat(meta)}
     >
-    <link rel="icon" href={favicon} />
+    <link rel="icon" />
     </Helmet>
   )
 }
