@@ -149,6 +149,7 @@ export default function ({data}) {
       {/* section title */}
       <div className="col-md-12">
         <div className="section-title">
+        <h4 className="title">TA ECOM CONTENTFUL</h4>
           <h3 className="title">Top selling</h3>
          
         </div>
