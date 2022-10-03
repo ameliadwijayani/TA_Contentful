@@ -10,7 +10,7 @@ import { login, logout, isAuthenticated, getProfile,setItem } from "../utils/aut
 
 export default function ({data}) {
   
-  
+  <title></title>
   const user = getProfile()
 
   const [Loading,setLoading]=React.useState(false)

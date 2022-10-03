@@ -35,7 +35,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
             openGraph={{
                 type: 'website',
                 url: 'http://localhost:8000/',
-                title: 'E-com',
+                title: 'Website E-com',
                 description: 'Coba Ecom TA',
                 images: [
                     {
