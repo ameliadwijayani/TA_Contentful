@@ -170,7 +170,7 @@ export default function ({data}) {
                       <div className="product"  style={{ width:"263px",minHeight:"15vh" }}key={index}>
                           <div className="product-img">
                           {/* <GatsbyImage image={e.images.url} style={{ width:"263px",height:"40vh" }} /> */}
-                                        <img src={e.images.url}  />
+                                        <img src={e.images.url}  alt="img"/>
                         
                             <div className="product-label">
                         

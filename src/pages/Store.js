@@ -86,7 +86,7 @@ export default function Store({ data: {
                             <div className="col-md-4 col-xs-6" key={index}>
                                 <div className="product">
                                     <div className="product-img">
-                                        <img src={e.node.images.url}  />
+                                        <img src={e.node.images.url} alt="img" />
                                         <div className="product-label">
                                         
                                         </div>
