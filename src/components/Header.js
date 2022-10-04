@@ -35,6 +35,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
         <SEO/>
         {/* TOP HEADER */}
         <div id="top-header">
+            <h1>TA ECOM CONTENTFUL</h1>
             <div className="container">
             <ul className="header-links pull-left">
                 
