@@ -6,7 +6,6 @@ function SEO({ description, meta, title }) {
   
  
   const metaDescription = description || "Halaman web tentang ta ecom contentful"
-  const defaultTitle = `TA ECOM CONTENTFUL`
   const keywords=`TA ECOM CONTENTFUL TOP SELLING LIVIDEAS HEADSET GAMING`
 
   return (
@@ -15,7 +14,6 @@ function SEO({ description, meta, title }) {
         lang:"id"
       }}
       title="TA ECOM CONTENTFUL"
-      titleTemplate={defaultTitle ? `%s - ${defaultTitle}` : null}
       meta={[
         {
           name: `description`,
