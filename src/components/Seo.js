@@ -1,7 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-
+import logo from "../images/logo.png"
 function SEO({ description, meta, title }) {
   
  
@@ -63,7 +63,7 @@ function SEO({ description, meta, title }) {
         },
       ].concat(meta)}
     >
-    <link rel="icon" />
+    <link rel="icon" src={logo}/>
     </Helmet>
   )
 }
