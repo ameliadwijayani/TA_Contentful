@@ -21,7 +21,7 @@ function SEO({ description, meta, title }) {
         },
         {
           property: `og:title`,
-          content: title,
+          content: "TA ECOM CONTENTFUL",
         },
         {
           name: `keywords`,
