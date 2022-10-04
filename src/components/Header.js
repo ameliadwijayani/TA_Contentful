@@ -32,28 +32,6 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
   return (
     
     <div>
-        <GatsbySeo
-            openGraph={{
-                type: 'website',
-                url: 'http://localhost:8000/',
-                title: 'Website E-com',
-                description: 'Coba Ecom TA',
-                images: [
-                    {
-                        url: 'https://www.example.ie/og-image.jpg',
-                        width: 800,
-                        height: 600,
-                        alt: 'Og Image Alt',
-                    },
-                    {
-                        url: 'https://www.example.ie/og-image-2.jpg',
-                        width: 800,
-                        height: 600,
-                        alt: 'Og Image Alt 2',
-                    },
-                ],
-            }}
-        />
         <SEO/>
         {/* TOP HEADER */}
         <div id="top-header">
