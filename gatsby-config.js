@@ -17,22 +17,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
    
-    {
-      resolve: 'gatsby-plugin-next-seo',
-      options: {
-        openGraph: {
-          type: 'website',
-          locale: 'id_ID',
-          url: 'https://www.url.ie/',
-          site_name: 'AmelPlaza',
-        },
-        twitter: {
-          handle: '@handle',
-          site: '@site',
-          cardType: 'summary_large_image',
-        },
-      },
-    },
+    
     {
 
       resolve: `gatsby-source-contentful`,
