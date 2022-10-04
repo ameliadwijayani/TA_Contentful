@@ -14,7 +14,7 @@ function SEO({ description, meta, title }) {
       htmlAttributes={{
         lang:"id"
       }}
-      title={title}
+      title="TA ECOM CONTENTFUL"
       titleTemplate={defaultTitle ? `%s - ${defaultTitle}` : null}
       meta={[
         {
