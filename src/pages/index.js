@@ -109,7 +109,7 @@ export default function ({data}) {
                       </li>
                       <li>
                         <div>
-                          <h3>10</h3>
+                          <t>10</h3>
                           <span>Hours</span>
                         </div>
                       </li>
@@ -147,8 +147,8 @@ export default function ({data}) {
       {/* section title */}
       <div className="col-md-12">
         <div className="section-title">
-        <h4 className="title">TA ECOM CONTENTFUL</h4>
-          <h3 className="title">Top selling</h3>
+        <h3 className="title">TA ECOM CONTENTFUL</h3>
+          <h4 className="title">Top selling</h4>
          
         </div>
       </div>
