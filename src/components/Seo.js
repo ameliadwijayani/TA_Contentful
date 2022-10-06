@@ -13,7 +13,7 @@ function SEO({ description, meta, title }) {
       htmlAttributes={{
         lang:"id"
       }}
-      title={titles}
+      title="TA ECOM CONTENTFUL STUDY KASUS 2"
       meta={[
         {
           name: `description`,
@@ -21,7 +21,7 @@ function SEO({ description, meta, title }) {
         },
         {
           property: `og:title`,
-          content: titles,
+          content: "TA ECOM CONTENTFUL STUDY KASUS 2",
         },
         {
           name: `keywords`,
