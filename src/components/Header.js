@@ -35,19 +35,16 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
         <SEO/>
         {/* TOP HEADER */}
         <div id="top-header">
-            <h1>TA ECOM CONTENTFUL</h1>
             <div className="container">
             <ul className="header-links pull-left">
-                
-              
-              
+                <h1 style={{color:"white"}}>TA ECOM CONTENTFUL</h1>
                 <li><Link to="/" activeClassName="active" ><i className="fa fa-phone" /> Home</Link></li>
                 <li><Link to="/Store" activeClassName="active" ><i className="fa fa-map-marker" /> Store</Link></li>
             </ul>
             <ul className="header-links pull-right">
-                <li><a href="/"><i className="fa fa-user-o" /> {user.name}</a></li>
+                {/* <li><a href="/"><i className="fa fa-user-o" /> {user.name}</a></li> */}
                 <li><a
-                    href="#logout"
+                    href="/logout"
                     onClick={e => {
                         logout()
                         e.preventDefault()
@@ -68,7 +65,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                 {/* LOGO */}
                 <div className="col-md-3">
                 <div className="header-logo">
-                    <a href="#" className="logo">
+                    <a href="/" className="logo">
                     <StaticImage src="./img/logo.png" alt />
                     </a>
                 </div>
@@ -109,7 +106,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                         
                     
                         
-                        <Link to="/Checkout" activeClassName="active" ><a><i className="fa fa-phone" /> <i className="fa fa-shopping-cart" />
+                        <Link to="/" activeClassName="active" ><a href="a"><i className="fa fa-phone" /> <i className="fa fa-shopping-cart" />
                         <span>Your Cart</span></a></Link>
                     <div className="cart-dropdown">
                         <div className="cart-list">
@@ -118,7 +115,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                             <StaticImage src="./img/product01.png" alt />
                             </div>
                             <div className="product-body">
-                            <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
                             <h4 className="product-price"><span className="qty">1x</span>$980.00</h4>
                             </div>
                             <button className="delete"><i className="fa fa-close" /></button>
@@ -128,7 +125,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                             <StaticImage src="./img/product02.png" alt />
                             </div>
                             <div className="product-body">
-                            <h3 className="product-name"><a href="#">product name goes here</a></h3>
+                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
                             <h4 className="product-price"><span className="qty">3x</span>$980.00</h4>
                             </div>
                             <button className="delete"><i className="fa fa-close" /></button>
@@ -139,15 +136,15 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                         <h5>SUBTOTAL: $2940.00</h5>
                         </div>
                         <div className="cart-btns">
-                        <a href="#">View Cart</a>
-                        <a href="#">Checkout  <i className="fa fa-arrow-circle-right" /></a>
+                        <a href="/">View Cart</a>
+                        <a href="/">Checkout  <i className="fa fa-arrow-circle-right" /></a>
                         </div>
                     </div>
                     </div>
                     {/* /Cart */}
                     {/* Menu Toogle */} 
                     <div className="menu-toggle">
-                    <a href="#">
+                    <a href="/">
                         <i className="fa fa-bars" />
                         <span>Menu</span>
                     </a>

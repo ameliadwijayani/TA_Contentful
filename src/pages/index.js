@@ -56,7 +56,7 @@ export default function ({data}) {
                 </div>
                 <div className="shop-body">
                   <h3>Laptop<br />Collection</h3>
-                  <a><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
+                  <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function ({data}) {
                 </div>
                 <div className="shop-body">
                   <h3>Accessories<br />Collection</h3>
-                  <a href="#" className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /></a>
+                  <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ export default function ({data}) {
                 </div>
                 <div className="shop-body">
                   <h3>Cameras<br />Collection</h3>
-                  <a><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
+                  <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
             </div>
@@ -130,7 +130,7 @@ export default function ({data}) {
                     </ul>
                     <h2 class="text-uppercase">hot deal this week</h2>
                     <p>New Collection Up to 50% OFF</p>
-                    <a><Link to="/Store" class="primary-btn cta-btn" href="#">Shop now</Link></a>
+                    <a href="/"><Link to="/Store" class="primary-btn cta-btn" href="/">Shop now</Link></a>
                   </div>
                 </div>
               </div>
@@ -179,7 +179,7 @@ export default function ({data}) {
                             </div>
                           </div>
                           <div className="product-body">
-                            <h3 className=""><a href="#"><Link to={e.id} style={{  }}>{e.namaProduk.substr(0,22)}....</Link></a></h3>
+                            <h3 className=""><a href="/"><Link to={e.id} style={{  }}>{e.namaProduk.substr(0,22)}....</Link></a></h3>
                             <h4 className="product-price">{e.hargaProduk} </h4>
                           </div>
                           
