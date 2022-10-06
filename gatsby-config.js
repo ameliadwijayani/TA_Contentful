@@ -11,13 +11,20 @@ module.exports = {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    siteUrl: `https://ta-ecom-contentful.netlify.app/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
-   
-    
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'hhttps://ta-ecom-contentful.netlify.app/',
+        sitemap: 'https://ta-ecom-contentful.netlify.app/sitemap/sitemap-0.xml',
+        policy: [{userAgent: '*', allow: '/'}]
+      }
+    },
     {
 
       resolve: `gatsby-source-contentful`,
