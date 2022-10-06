@@ -5,7 +5,7 @@ import logo from "../images/logo.png"
 function SEO({ description, meta, title }) {
   
   const titles= "Ecommerce Selling Gaming Laptop "
-  const metaDescription = description || "Halaman web tentang ta ecom contentful study kasus ke 2. Halaman ini merupakan marketplace yang datanya diambil dari contentful CMS. Untuk Auth dari page ini tidak bisa karena dihosting melalui netlify."
+  const metaDescription = description || "Halaman web tentang ta ecom contentful study kasus ke 2. Halaman ini merupakan marketplace yang datanya diambil dari contentful CMS."
   const keywords=`TA TOP SELLING LIVIDEAS HEADSET GAMING LAPTOP `
 
   return (
@@ -13,7 +13,7 @@ function SEO({ description, meta, title }) {
       htmlAttributes={{
         lang:"id"
       }}
-      title="TA ECOM CONTENTFUL STUDY KASUS 2"
+      title="Ecommerce Selling Gaming Laptop "
       meta={[
         {
           name: `description`,
@@ -21,7 +21,7 @@ function SEO({ description, meta, title }) {
         },
         {
           property: `og:title`,
-          content: "TA ECOM CONTENTFUL STUDY KASUS 2",
+          content: "Ecommerce Selling Gaming Laptop ",
         },
         {
           name: `keywords`,
