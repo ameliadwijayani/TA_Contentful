@@ -4,8 +4,8 @@ import { Helmet } from "react-helmet"
 import logo from "../images/logo.png"
 function SEO({ description, meta, title }) {
   
-  const titles= "TA ECOM CONTENTFUL STUDY KASUS 2"
-  const metaDescription = description || "Halaman web tentang ta ecom contentful study kasus ke 2. Halaman ini merupakan marketplace yang datanya diambil dari contentful CMS. Untuk Auth dari page ini tidak bisa karena dihosting melalui netlify. Netlify tidak mendukung redirect ke halaman library auth."
+  const titles= "Ecommerce Selling Gaming Laptop "
+  const metaDescription = description || "Halaman web tentang ta ecom contentful study kasus ke 2. Halaman ini merupakan marketplace yang datanya diambil dari contentful CMS. Untuk Auth dari page ini tidak bisa karena dihosting melalui netlify."
   const keywords=`TA TOP SELLING LIVIDEAS HEADSET GAMING LAPTOP `
 
   return (
