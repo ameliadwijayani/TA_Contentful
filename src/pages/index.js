@@ -109,7 +109,7 @@ export default function ({data}) {
                       </li>
                       <li>
                         <div>
-                          <t>10</h3>
+                          <h3>10</h3>
                           <span>Hours</span>
                         </div>
                       </li>
