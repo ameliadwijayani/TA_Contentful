@@ -36,7 +36,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
         <div id="top-header">
             <div className="container">
             <ul className="header-links pull-left">
-                <h1 style={{color:"white"}}>TA ECOM CONTENTFUL</h1>
+                <h1 style={{color:"white"}}>Ecommerce Selling Gaming Laptop </h1>
                 <li><Link to="/" activeClassName="active" ><i className="fa fa-phone" /> Home</Link></li>
                 <li><Link to="/Store" activeClassName="active" ><i className="fa fa-map-marker" /> Store</Link></li>
             </ul>
