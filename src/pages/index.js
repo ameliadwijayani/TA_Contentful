@@ -5,13 +5,11 @@ import { StaticImage} from "gatsby-plugin-image"
 import { GatsbyImage } from "gatsby-plugin-image"
 import { useStaticQuery, graphql,Link} from "gatsby"
 
-import { login, logout, isAuthenticated, getProfile,setItem } from "../utils/auth"
 
 
 export default function ({data}) {
   
-  <title></title>
-  const user = getProfile()
+  // const user = getProfile()
 
   const [Loading,setLoading]=React.useState(false)
   React.useEffect(()=>{
@@ -206,7 +204,6 @@ export default function ({data}) {
 
     )
   }
-  if(!Loading) return <div>loading</div>
   return (
     <Layout>
       

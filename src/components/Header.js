@@ -2,7 +2,6 @@ import React from 'react'
 import { useStaticQuery, graphql,Link} from "gatsby"
 
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
-import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
 import { StaticImage } from "gatsby-plugin-image"
 import SEO from './Seo';
 export default function  Header({ searchQuery, setSearchQuery,searchData }) {
@@ -23,7 +22,7 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
     React.useEffect(()=>{
        
     },[])
-    const user = getProfile()
+    // const user = getProfile()
     // if(Object.keys(user).length === 0){logout()}
     // if (!isAuthenticated()) {
     //     login()
@@ -45,10 +44,10 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                 {/* <li><a href="/"><i className="fa fa-user-o" /> {user.name}</a></li> */}
                 <li><a
                     href="/logout"
-                    onClick={e => {
-                        logout()
-                        e.preventDefault()
-                    }}
+                    // onClick={e => {
+                    //     logout()
+                    //     e.preventDefault()
+                    // }}
                     ><i className="fa fa-user-o" />
                     Log Out
                 </a></li>
