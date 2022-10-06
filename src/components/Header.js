@@ -100,47 +100,6 @@ export default function  Header({ searchQuery, setSearchQuery,searchData }) {
                 {/* ACCOUNT */}
                 <div className="col-md-3 clearfix">
                 <div className="header-ctn">
-                    {/* Cart */}
-                    <div className="dropdown">
-                        
-                    
-                        
-                        <Link to="/" activeClassName="active" ><a href="a"><i className="fa fa-phone" /> <i className="fa fa-shopping-cart" />
-                        <span>Your Cart</span></a></Link>
-                    <div className="cart-dropdown">
-                        <div className="cart-list">
-                        <div className="product-widget">
-                            <div className="product-img">
-                            <StaticImage src="./img/product01.png" alt />
-                            </div>
-                            <div className="product-body">
-                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
-                            <h4 className="product-price"><span className="qty">1x</span>$980.00</h4>
-                            </div>
-                            <button className="delete"><i className="fa fa-close" /></button>
-                        </div>
-                        <div className="product-widget">
-                            <div className="product-img">
-                            <StaticImage src="./img/product02.png" alt />
-                            </div>
-                            <div className="product-body">
-                            <h3 className="product-name"><a href="/">product name goes here</a></h3>
-                            <h4 className="product-price"><span className="qty">3x</span>$980.00</h4>
-                            </div>
-                            <button className="delete"><i className="fa fa-close" /></button>
-                        </div>
-                        </div>
-                        <div className="cart-summary">
-                        <small>3 Item(s) selected</small>
-                        <h5>SUBTOTAL: $2940.00</h5>
-                        </div>
-                        <div className="cart-btns">
-                        <a href="/">View Cart</a>
-                        <a href="/">Checkout  <i className="fa fa-arrow-circle-right" /></a>
-                        </div>
-                    </div>
-                    </div>
-                    {/* /Cart */}
                     {/* Menu Toogle */} 
                     <div className="menu-toggle">
                     <a href="/">

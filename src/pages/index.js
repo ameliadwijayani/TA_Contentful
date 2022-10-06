@@ -53,7 +53,7 @@ export default function ({data}) {
                   
                 </div>
                 <div className="shop-body">
-                  <h3>Laptop<br />Collection</h3>
+                  <h2>Laptop<br />Collection</h2>
                   <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
@@ -66,7 +66,7 @@ export default function ({data}) {
                  <StaticImage src="./img/shop03.png" alt="A dinosaur" />
                 </div>
                 <div className="shop-body">
-                  <h3>Accessories<br />Collection</h3>
+                  <h2>Accessories<br />Collection</h2>
                   <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function ({data}) {
                  <StaticImage src="./img/shop02.png" alt="A dinosaur" />
                 </div>
                 <div className="shop-body">
-                  <h3>Cameras<br />Collection</h3>
+                  <h2>Cameras<br />Collection</h2>
                   <a href="/"><Link to="/Store"  className="cta-btn">Shop now <i className="fa fa-arrow-circle-right" /> </Link></a>
                 </div>
               </div>
