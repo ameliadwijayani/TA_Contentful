@@ -7,6 +7,7 @@ function SEO({ description, meta, title }) {
   const titles= "Ecommerce Selling Gaming Laptop "
   const metaDescription = description || "Halaman web tentang ta ecom contentful study kasus ke 2. Halaman ini merupakan marketplace yang datanya diambil dari contentful CMS."
   const keywords=`TA TOP SELLING LIVIDEAS HEADSET GAMING LAPTOP `
+  const googlesite="Hp0t1O2HuU3-AI298ARQ_S13lbJMyUymz5RWHMtw6DE";
 
   return (
     <Helmet
@@ -59,6 +60,7 @@ function SEO({ description, meta, title }) {
           name: `google-site-verification`,
           content: "Hp0t1O2HuU3-AI298ARQ_S13lbJMyUymz5RWHMtw6DE",
         },
+        
       ].concat(meta)}
     >
     <link rel="icon" src={logo}/>
